@@ -1,0 +1,66 @@
+/**
+  * Variables
+  * Contains re-usable variables like colors, sizes, breakpoints etc.
+  *
+  *
+  */
+
+/*==================================================================================
+  GRID overwrite default
+==================================================================================*/
+// Grid
+$grid-columns: 12; // Set number of columns in the grid
+
+$xs-max: 40rem; // Set xs breakpoint's max width 40rem = 640px
+$sm-max: 64rem; // Set sm breakpoint's max width 64rem =1,024px
+$md-max: 90rem; // Set md breakpoint's max width 90rem = 1,440px
+$lg-max: 120rem; // Set lg breakpoint's max width 120rem = 1,920px
+
+$gutter: 1rem; // Set gutter size 16px
+
+$content-well-max-width: "none"; // Set the max-width of the content well => see mixins
+
+/*==================================================================================
+  ROOT
+==================================================================================*/
+
+:root {
+  --main_color: #1c1b1b;
+  --text_color: #1c1b1b;
+
+  // size
+  --text-h1: 45px;
+  --text-h2: 24px;
+  --text-display: 220px;
+  --text-p: 18px;
+}
+
+/*==================================================================================
+  COLORS
+==================================================================================*/
+
+/* from customiser root -> see function-customiser.php
+/––––––––––––––––––––––––*/
+$color__main: var(--main_color);
+$color__text: var(--text_color);
+$color__bright: #ffffff;
+
+/*==================================================================================
+  BUTTONS
+==================================================================================*/
+
+$button__color: $color__main;
+$button__width: 150px;
+$button__height: 45px;
+$button__radius: 30px;
+
+/*==================================================================================
+  TYPOGRAPHY
+==================================================================================*/
+
+$text__h1: var(--text-h1);
+$text__h2: var(--text-h2);
+$text__display: var(--text-display);
+$text__p: var(--text-p);
+
+$font__weight: 400; //This is the global font-weight for text, link etc.. Specify header weight separetelly
